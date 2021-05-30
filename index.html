@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainy Days</title>
+</head>
+<style>
+    body {margin:0;}
+    .Header {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        height: 70px;
+    }
+
+    @media screen and (max-width:680px) {
+        .Header.responsive {position: relative;}
+        .Header.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+    }
+    @media (max-width: 960px){
+    .Header .headerLogo{
+        display: inline-block;
+        width: 86px;
+        height: 15px;
+        margin-top: 17px;
+        margin-left: 6px;
+    }
+    }
+</style>
+</head>
 <body>
 
-<h1>Rainy Days</h1>
-
-<p>Clothes that keep you dry</p>
-
+<div class="Header" id="myHeader">
+    <a class = "headerLogo">
+    <header><center><i><font size = "6" face = "verdana" color = "white">Lunation Boards</font></i></center></header>
+    </a>
+</div>
 </body>
 </html>
